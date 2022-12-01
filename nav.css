@@ -34,6 +34,10 @@ header {
     flex-direction: column;
 }
 
+.side-nav-button-container {
+    display: none;
+}
+
 @media (max-width: 528px) {
     .header-nav {
         display: none;
@@ -48,6 +52,10 @@ header {
     .side-nav[open="true"] {
         transform: translateX(0%);
         z-index: 1400;
+    }
+
+    .side-nav-button-container {
+        display: block;
     }
 }
 

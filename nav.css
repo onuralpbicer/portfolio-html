@@ -1,0 +1,139 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--header-bg-color);
+    /* padding: 0.5rem; */
+    color: var(--header-color);
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.side-nav-close {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    align-self: flex-end;
+}
+
+.side-nav {
+    display: none;
+    background-color: var(--header-bg-color);
+    color: var(--header-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60vw;
+    box-shadow: var(--header-bg-color) 0px 7px 29px 0px;
+    box-shadow: var(--header-bg-color) 0px 0px 1rem;
+    flex-direction: column;
+}
+
+@media (max-width: 528px) {
+    .header-nav {
+        display: none;
+    }
+
+    .side-nav {
+        display: flex;
+        transform: translateX(-120%);
+        transition: transform .3s ease-in-out;
+    }
+
+    .side-nav[open="true"] {
+        transform: translateX(0%);
+        z-index: 1400;
+    }
+}
+
+.side-nav-item {
+    color: var(--header-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+    padding: 0.5rem 2rem;
+    transition: color ease-in-out 0.3s;
+    display: block;
+}
+
+/* .side-nav-item:first-of-type {
+    margin-top: 1rem;
+} */
+
+.side-nav-item:hover {
+    color: var(--header-nav-hover);
+}
+
+.side-nav-item::after {
+    right: 0;
+    content: "";
+    display: block;
+    width: 2px;
+    top: 50%;
+    position: absolute;
+    background: var(--header-nav-hover);
+    transition: height 0.3s ease-in-out 0s, top 0.3s ease-in-out 0s;
+    height: 0;
+}
+
+.side-nav-item:hover::after {
+    height: 100%;
+    top: 0;
+}
+
+.header-nav-item {
+    color: var(--header-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+    padding: 0.5rem;
+    transition: color ease-in-out 0.3s;
+}
+
+@media (prefers-reduced-motion) {
+    .header-nav-item {
+        transition: none;
+    }
+
+    .header-nav-item::after {
+        transition: none;
+    }
+
+    .side-nav-item {
+        transition: none;
+    }
+
+    .side-nav-item::after {
+        transition: none;
+    }
+}
+
+.header-nav-item::after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--header-nav-hover);
+    transition: width 0.3s ease-in-out 0s, left 0.3s ease-in-out 0s;
+    width: 0;
+}
+
+.header-nav-item:hover {
+    color: var(--header-nav-hover);
+}
+
+.header-nav-item:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.header-nav-item:active {
+    opacity: 0.8;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Onur Alp Bicer</title>
+
+		<link rel="stylesheet" href="./reset.css" />
+		<link rel="stylesheet" href="./styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Roboto"
+		/>
+		<script defer src="./sidenav.js"></script>
+	</head>
+	<body>
+		<button class="navbutton" onclick="toggleNav()">
+			<svg
+				height="32px"
+				class="navbutton-icon"
+				stroke="white"
+				fill="white"
+				style="enable-background: new 0 0 32 32"
+				version="1.1"
+				viewBox="0 0 32 32"
+				width="32px"
+				xml:space="preserve"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+			>
+				<path
+					d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+				/>
+			</svg>
+		</button>
+
+		<div class="sidenav">
+			<nav>
+				<a class="navlink" href="#about" onclick="closeNav()">Main</a>
+				<a class="navlink" href="#education" onclick="closeNav()">Education</a>
+				<a class="navlink" href="#career" onclick="closeNav()">Career</a>
+				<a class="navlink" href="#skills" onclick="closeNav()">Skills</a>
+				<a class="navlink" href="#projects" onclick="closeNav()">Projects</a>
+				<a class="navlink" href="#contact" onclick="closeNav()"> Contact Me </a>
+			</nav>
+		</div>
+		<div class="main">
+			<section id="about">
+				<h1>
+					<!-- Welcome to my portfolio -->
+					<span class="faded">About</span>
+				</h1>
+				<p>
+					I'm a Software Engineer with a love for the web and everything
+					fullstack
+				</p>
+				<span class="scroll right">scroll down -></span>
+				<span class="scroll left">scroll down -></span>
+			</section>
+			<section id="education">
+				<h2>
+					<!-- Education History -->
+					<span class="faded">Education</span>
+				</h2>
+				<ol>
+					<li>
+						<p>
+							Uskudar American Academy - High School Diploma <i>June 2016</i>
+						</p>
+					</li>
+					<li>
+						<p>
+							UNSW - Bachelor of Computer Science (Artificial Intelligence)
+							<i>September 2019</i>
+						</p>
+					</li>
+				</ol>
+			</section>
+			<section id="career">
+				<h2>
+					<!-- Employment History -->
+					<span class="faded">Career</span>
+				</h2>
+				<ol>
+					<li>
+						<p>Code Camp - Teaching Asssitant <i>July 2018</i></p>
+					</li>
+					<li>
+						<p>Throwdown Esports - Observer <i>Oct 2018 - Nov 2018</i></p>
+					</li>
+					<li>
+						<p>Code Camp - Head Teacher <i>Oct 2018 - Feb 2020</i></p>
+					</li>
+					<li>
+						<p>Optergy - Software Engineer <i>Mar 2020 - Current</i></p>
+					</li>
+				</ol>
+			</section>
+			<section id="skills">
+				<h2>
+					<!-- Skills:  -->
+					<span class="faded">Skills</span>
+				</h2>
+				<ul>
+					<li>
+						<p>Web</p>
+						<ul>
+							<li>HTML/CSS/JS</li>
+							<li>React</li>
+							<li>Svelte</li>
+							<li>Angular</li>
+						</ul>
+					</li>
+					<li>
+						<p>Programming Languages</p>
+						<ul>
+							<li>JavaScript/TypeScript</li>
+							<li>Java</li>
+							<li>C</li>
+							<li>Python</li>
+							<li>Bash/shell</li>
+							<li>Perl</li>
+						</ul>
+					</li>
+					<li>
+						<p>Databases</p>
+						<ul>
+							<li>SQLite</li>
+							<li>PostgreSQL</li>
+							<li>DynamoDB</li>
+						</ul>
+					</li>
+					<li>
+						<p>AWS</p>
+						<ul>
+							<li>EC2</li>
+							<li>Cognito</li>
+							<li>RDS</li>
+							<li>API Gateway</li>
+							<li>Lambda</li>
+							<li>SNS</li>
+							<li>SQS</li>
+							<li>S3</li>
+							<li>DynamoDB</li>
+							<li>CodeBuild/CodePipeline/CodeDeploy</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section id="projects">
+				<h2>
+					<!-- Projects -->
+					<span class="faded">Projects</span>
+				</h2>
+				<ul>
+					<li><a href="#landing">This page - Vanilla HTML/CSS/JS</a></li>
+					<li>
+						<p>More coming soon</p>
+					</li>
+				</ul>
+			</section>
+			<section id="contact">
+				<h2>
+					<!-- Contact Me: -->
+					<span class="faded">Contact Me</span>
+				</h2>
+				<p>Phone Number: <a href="tel:0061423908858">+61 423 908 858</a></p>
+				<p>
+					Email:
+					<a href="mailto:onuralpbicer@gmail.com">onuralpbicer@gmail.com</a>
+				</p>
+				<p>
+					LinkedIn:
+					<a href="https://www.linkedin.com/in/onuralpbicer/">LinkedIn</a>
+				</p>
+				<p>Github: <a href="https://github.com/onuralpbicer">Github</a></p>
+				<p>Location: Sydney/Australia</p>
+			</section>
+		</div>
+		<!-- <section>section2</section> -->
+	</body>
+</html>

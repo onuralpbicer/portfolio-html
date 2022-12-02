@@ -25,6 +25,9 @@
 	--header-color: white;
 	--header-nav-hover: gray;
 	/* --header-nav-hover: gray; */
+
+	--theme-color-1: #ff1100;
+	--theme-color-2: #004cff;
 }
 
 @media (prefers-color-scheme: dark) {

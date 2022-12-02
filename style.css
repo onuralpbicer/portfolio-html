@@ -21,6 +21,14 @@ section {
 h2 {
 	text-align: center;
 	font-size: xxx-large;
+	background: linear-gradient(
+		160deg,
+		var(--theme-color-1) 30%,
+		var(--theme-color-2) 80%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 /* @media (max-width: 528px) {

@@ -29,7 +29,7 @@ const data = list.map((word) => ({
 	weight: 1,
 }))
 
-Highcharts.chart('tech-skills-container', {
+const chart = Highcharts.chart('tech-skills-container', {
 	accessibility: {
 		screenReaderSection: {
 			beforeChartFormat:
@@ -50,7 +50,6 @@ Highcharts.chart('tech-skills-container', {
 	},
 	chart: {
 		backgroundColor: null,
-		// width: '100%',
 	},
 	tooltip: {
 		enabled: false,

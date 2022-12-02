@@ -10,12 +10,19 @@ section:first-of-type {
 
 section {
     /* background-color: red; */
-    max-width: 70%;
+    scroll-margin-top: 2rem;
+    max-width: 100vh;
     margin-left: auto;
     margin-right: auto;
-    padding: 5rem;
-    height: 100vh;
+    padding: 2rem;
+    height: calc(100vh - 50px);
 }
+
+/* @media (max-width: 528px) {
+    section {
+        max-width: 100%;
+    }
+} */
 
 section:nth-of-type(odd) {
     /* background-color: blue; */

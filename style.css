@@ -3,3 +3,20 @@
     border: none;
     cursor: pointer;
 }
+
+section:first-of-type {
+    margin-top: 50px;
+}
+
+section {
+    /* background-color: red; */
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem;
+    min-height: 90vh;
+}
+
+section:nth-of-type(odd) {
+    /* background-color: blue; */
+}

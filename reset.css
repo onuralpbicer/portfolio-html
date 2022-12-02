@@ -12,13 +12,13 @@
 */
 * {
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 /*
   3. Allow percentage-based heights in the application
 */
-html,
-body {
+html {
     height: 100%;
 }
 
@@ -30,6 +30,7 @@ body {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+
 }
 
 /*

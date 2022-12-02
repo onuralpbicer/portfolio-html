@@ -17,12 +17,19 @@
 
 <body>
     <header>
+        <button class="sidenav-button iconbutton" onclick="openNav()">
+            <svg height="24" width="24" viewBox="0 0 24 24" stroke="white">
+                <line x1="2" y1="6" x2="22" y2="6" stroke-width="2" />
+                <line x1="2" y1="12" x2="22" y2="12" stroke-width="2" />
+                <line x1="2" y1="18" x2="22" y2="18" stroke-width="2" />
+            </svg>
+        </button>
         <nav class="header-nav">
-            <a class="header-nav-item" href="#">About</a>
-            <a class="header-nav-item" href="#">Education</a>
-            <a class="header-nav-item" href="#">Career</a>
-            <a class="header-nav-item" href="#">Portfolio</a>
-            <a class="header-nav-item" href="#">Contact</a>
+            <a class="header-nav-item" href="#about">About</a>
+            <a class="header-nav-item" href="#education">Education</a>
+            <a class="header-nav-item" href="#career">Career</a>
+            <a class="header-nav-item" href="#portfolio">Portfolio</a>
+            <a class="header-nav-item" href="#contact">Contact</a>
         </nav>
     </header>
     <div class="side-nav" open="">
@@ -32,22 +39,79 @@
                 <line x1="2" y1="22" x2="22" y2="2" stroke-width="2" />
             </svg>
         </button>
-        <a class="side-nav-item" href="#">About</a>
-        <a class="side-nav-item" href="#">Education</a>
-        <a class="side-nav-item" href="#">Career</a>
-        <a class="side-nav-item" href="#">Portfolio</a>
-        <a class="side-nav-item" href="#">Contact</a>
+        <a class="side-nav-item" href="#about">About</a>
+        <a class="side-nav-item" href="#education">Education</a>
+        <a class="side-nav-item" href="#career">Career</a>
+        <a class="side-nav-item" href="#portfolio">Portfolio</a>
+        <a class="side-nav-item" href="#contact">Contact</a>
     </div>
-    <div class="side-nav-button-container">
-        <button class="iconbutton" onclick="openNav()">
-            <svg height="24" width="24" viewBox="0 0 24 24" stroke="white">
-                <line x1="2" y1="6" x2="22" y2="6" stroke-width="2" />
-                <line x1="2" y1="12" x2="22" y2="12" stroke-width="2" />
-                <line x1="2" y1="18" x2="22" y2="18" stroke-width="2" />
-            </svg>
-        </button>
-    </div>
-    <div>testing</div>
+    <section id="about">
+        <h1>
+            <!-- Welcome to my portfolio -->
+            <span class="faded">About</span>
+        </h1>
+        <p>
+            I'm a Software Engineer with a love for the web and everything
+            fullstack
+        </p>
+    </section>
+    <section id="education">
+        <h2>
+            <!-- Education History -->
+            <span class="faded">Education</span>
+        </h2>
+        <ol>
+            <li>
+                <p>
+                    Uskudar American Academy - High School Diploma <i>June 2016</i>
+                </p>
+            </li>
+            <li>
+                <p>
+                    UNSW - Bachelor of Computer Science (Artificial Intelligence)
+                    <i>September 2019</i>
+                </p>
+            </li>
+        </ol>
+    </section>
+    <section id="career">
+        <h2>
+            <!-- Employment History -->
+            <span class="faded">Career</span>
+        </h2>
+        <ol>
+            <li>
+                <p>Code Camp - Teaching Asssitant <i>July 2018</i></p>
+            </li>
+            <li>
+                <p>Throwdown Esports - Observer <i>Oct 2018 - Nov 2018</i></p>
+            </li>
+            <li>
+                <p>Code Camp - Head Teacher <i>Oct 2018 - Feb 2020</i></p>
+            </li>
+            <li>
+                <p>Optergy - Software Engineer <i>Mar 2020 - Current</i></p>
+            </li>
+        </ol>
+    </section>
+    <section id="portfolio">Coming Soon</section>
+    <section id="contact">
+        <h2>
+            <!-- Contact Me: -->
+            <span class="faded">Contact Me</span>
+        </h2>
+        <p>Phone Number: <a href="tel:0061423908858">+61 423 908 858</a></p>
+        <p>
+            Email:
+            <a href="mailto:onuralpbicer@gmail.com">onuralpbicer@gmail.com</a>
+        </p>
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/onuralpbicer/">LinkedIn</a>
+        </p>
+        <p>Github: <a href="https://github.com/onuralpbicer">Github</a></p>
+        <p>Location: Sydney/Australia</p>
+    </section>
 </body>
 
 </html>

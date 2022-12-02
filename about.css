@@ -23,7 +23,7 @@
 	height: 200px;
 	aspect-ratio: 1;
 	border-radius: 50%;
-	background: whitesmoke;
+	object-fit: cover;
 	margin: auto;
 }
 

@@ -1,0 +1,38 @@
+.about-container {
+	display: grid;
+	/* display: flex; */
+	flex-wrap: wrap;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: min-content auto;
+	align-content: flex-start;
+	gap: 1rem;
+}
+
+@media (max-width: 528px) {
+	.about-container {
+		display: flex;
+	}
+}
+
+.about-container > h2 {
+	grid-column-end: span 2;
+	width: 100%;
+}
+
+.about__profile-image {
+	height: 200px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background: whitesmoke;
+	margin: auto;
+}
+
+.about__tech-skills {
+	grid-row-end: span 2;
+	grid-row-start: 2;
+	grid-column-start: 2;
+}
+
+.hidden {
+	display: none;
+}

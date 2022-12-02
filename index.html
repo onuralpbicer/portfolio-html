@@ -1,76 +1,93 @@
 <!DOCTYPE html>
 <html lang="en-au">
+	<head>
+		<title>Onur Alp Bicer</title>
 
-<head>
-    <title>Onur Alp Bicer</title>
+		<link rel="stylesheet" href="./reset.css" />
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="./nav.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./about.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Roboto"
+		/>
 
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./nav.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/wordcloud.js"></script>
+		<script defer src="./sidenav.js"></script>
+		<script defer src="./wordcloud.js"></script>
 
-    <script defer src="./sidenav.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+	<body>
+		<header>
+			<button class="sidenav-button iconbutton" onclick="openNav()">
+				<svg height="24" width="24" viewBox="0 0 24 24" stroke="white">
+					<line x1="2" y1="6" x2="22" y2="6" stroke-width="2" />
+					<line x1="2" y1="12" x2="22" y2="12" stroke-width="2" />
+					<line x1="2" y1="18" x2="22" y2="18" stroke-width="2" />
+				</svg>
+			</button>
+			<nav class="header-nav">
+				<a class="header-nav-item" href="#about">About</a>
+				<a class="header-nav-item" href="#portfolio">Portfolio</a>
+				<a class="header-nav-item" href="#contact">Contact</a>
+				<a
+					class="header-nav-item"
+					href="https://github.com/onuralpbicer/portfolio-html"
+					>Code</a
+				>
+			</nav>
+		</header>
+		<div class="side-nav" open="">
+			<button class="side-nav-close iconbutton" onClick="closeNav()">
+				<svg height="24" width="24" viewBox="0 0 24 24" stroke="white">
+					<line x1="2" y1="2" x2="22" y2="22" stroke-width="2" />
+					<line x1="2" y1="22" x2="22" y2="2" stroke-width="2" />
+				</svg>
+			</button>
+			<a class="side-nav-item" href="#about">About</a>
+			<a class="side-nav-item" href="#portfolio">Portfolio</a>
+			<a class="side-nav-item" href="#contact">Contact</a>
+			<a
+				class="side-nav-item"
+				href="https://github.com/onuralpbicer/portfolio-html"
+				>Code</a
+			>
+		</div>
 
-<body>
-    <header>
-        <button class="sidenav-button iconbutton" onclick="openNav()">
-            <svg height="24" width="24" viewBox="0 0 24 24" stroke="white">
-                <line x1="2" y1="6" x2="22" y2="6" stroke-width="2" />
-                <line x1="2" y1="12" x2="22" y2="12" stroke-width="2" />
-                <line x1="2" y1="18" x2="22" y2="18" stroke-width="2" />
-            </svg>
-        </button>
-        <nav class="header-nav">
-            <a class="header-nav-item" href="#about">About</a>
-            <a class="header-nav-item" href="#portfolio">Portfolio</a>
-            <a class="header-nav-item" href="#contact">Contact</a>
-            <a class="header-nav-item" href="https://github.com/onuralpbicer/portfolio-html">Code</a>
-        </nav>
-    </header>
-    <div class="side-nav" open="">
-        <button class="side-nav-close iconbutton" onClick="closeNav()">
-            <svg height="24" width="24" viewBox="0 0 24 24" stroke="white">
-                <line x1="2" y1="2" x2="22" y2="22" stroke-width="2" />
-                <line x1="2" y1="22" x2="22" y2="2" stroke-width="2" />
-            </svg>
-        </button>
-        <a class="side-nav-item" href="#about">About</a>
-        <a class="side-nav-item" href="#portfolio">Portfolio</a>
-        <a class="side-nav-item" href="#contact">Contact</a>
-        <a class="side-nav-item" href="https://github.com/onuralpbicer/portfolio-html">Code</a>
-    </div>
-    <section id="about">
-        <h2>
-            <!-- Welcome to my portfolio -->
-            <span class="faded">About</span>
-        </h2>
-        <p>
-            I'm a Software Engineer with a love for the web and everything
-            fullstack
-        </p>
-    </section>
-    <section id="portfolio">Coming Soon</section>
-    <section id="contact">
-        <h2>
-            <!-- Contact Me: -->
-            <span class="faded">Contact Me</span>
-        </h2>
-        <p>Phone Number: <a href="tel:0061423908858">+61 423 908 858</a></p>
-        <p>
-            Email:
-            <a href="mailto:onuralpbicer@gmail.com">onuralpbicer@gmail.com</a>
-        </p>
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/onuralpbicer/">LinkedIn</a>
-        </p>
-        <p>Github: <a href="https://github.com/onuralpbicer">Github</a></p>
-        <p>Location: Sydney/Australia</p>
-    </section>
-</body>
+		<section id="about" class="about-container">
+			<h2>About</h2>
+			<div class="about__profile-image"></div>
+			<p>
+				Hi, my name is Onur. I am a Software Engineer from Sydney/Australia. My
+				passion is to create software to improve people's lives. I really enjoy
+				creating resposive and user-friendly interfaces catering to all kinds of
+				different users. I never stop learning and always strive to achieve my
+				best.
+			</p>
+			<div id="tech-skills-container" class="about__tech-skills"></div>
+		</section>
 
+		<section id="portfolio">Coming Soon</section>
+		<section id="contact">
+			<h2>
+				<!-- Contact Me: -->
+				<span class="faded">Contact Me</span>
+			</h2>
+			<p>Phone Number: <a href="tel:0061423908858">+61 423 908 858</a></p>
+			<p>
+				Email:
+				<a href="mailto:onuralpbicer@gmail.com">onuralpbicer@gmail.com</a>
+			</p>
+			<p>
+				LinkedIn:
+				<a href="https://www.linkedin.com/in/onuralpbicer/">LinkedIn</a>
+			</p>
+			<p>Github: <a href="https://github.com/onuralpbicer">Github</a></p>
+			<p>Location: Sydney/Australia</p>
+		</section>
+	</body>
 </html>

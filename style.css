@@ -1,21 +1,26 @@
 .iconbutton {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
 }
 
 section:first-of-type {
-    margin-top: 50px;
+	margin-top: 50px;
 }
 
 section {
-    /* background-color: red; */
-    scroll-margin-top: 50px;
-    max-width: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2rem;
-    min-height: calc(100vh - 50px);
+	/* background-color: red; */
+	scroll-margin-top: 50px;
+	/* max-width: 100vh; */
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2rem;
+	min-height: calc(100vh - 50px);
+}
+
+h2 {
+	text-align: center;
+	font-size: xxx-large;
 }
 
 /* @media (max-width: 528px) {
@@ -25,5 +30,5 @@ section {
 } */
 
 section:nth-of-type(odd) {
-    /* background-color: blue; */
+	/* background-color: blue; */
 }

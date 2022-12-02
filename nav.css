@@ -44,7 +44,7 @@ header {
 }
 
 header {
-	z-index: 9999;
+	z-index: 1300;
 }
 
 @media (max-width: 528px) {

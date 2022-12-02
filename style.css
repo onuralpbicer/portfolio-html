@@ -10,7 +10,7 @@ section:first-of-type {
 
 section {
     /* background-color: red; */
-    scroll-margin-top: 2rem;
+    scroll-margin-top: 50px;
     max-width: 100vh;
     margin-left: auto;
     margin-right: auto;

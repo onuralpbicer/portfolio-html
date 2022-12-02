@@ -24,6 +24,8 @@
 	--header-bg-color: black;
 	--header-color: white;
 	--header-nav-hover: gray;
+	--nav-active-bg: gray;
+	--nav-active-hover: black;
 	/* --header-nav-hover: gray; */
 
 	--theme-color-1: #ff1100;

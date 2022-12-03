@@ -50,7 +50,6 @@ class PortfolioProject extends HTMLElement {
 		li.className = 'portfolio-container'
 
 		const a = document.createElement('a')
-		console.log(this.attributes)
 		a.href = this.getAttribute('href')
 		a.className = 'portfolio-link'
 
@@ -83,4 +82,3 @@ class PortfolioProject extends HTMLElement {
 }
 
 customElements.define('portfolio-project', PortfolioProject)
-console.log('hello')

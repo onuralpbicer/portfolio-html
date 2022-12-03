@@ -1,8 +1,7 @@
 .contact-form {
 	display: grid;
 	max-width: 600px;
-	margin: auto;
-	margin-top: 1rem;
+	margin: 1rem auto;
 	grid-template-columns: 1fr 3fr;
 	grid-template-rows: auto auto auto auto auto;
 	gap: 1rem;
@@ -23,9 +22,15 @@ textarea {
 }
 
 .socials {
-	margin-top: 1rem;
+	margin-top: auto;
 	display: flex;
 	justify-content: center;
 	gap: 1rem;
 	fill: var(--text-hover-color);
+}
+
+section#contact {
+	/* color: red; */
+	display: flex;
+	flex-direction: column;
 }

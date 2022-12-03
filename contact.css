@@ -29,6 +29,10 @@ textarea {
 	fill: var(--text-hover-color);
 }
 
+.socials > a:visited {
+	fill: var(--text-hover-color);
+}
+
 section#contact {
 	/* color: red; */
 	display: flex;

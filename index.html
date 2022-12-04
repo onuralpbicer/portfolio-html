@@ -21,6 +21,7 @@
 		<script defer src="./wordcloud.js"></script>
 		<script defer src="./active.js"></script>
 		<script defer src="./portfolio.js"></script>
+		<script defer src="./contact.js"></script>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
@@ -96,15 +97,15 @@
 			<h2>
 				Contact Me
 			</h2>
-			<form class="contact-form">
+			<form id="contact-form" class="contact-form">
 				<label for="contact-name">Name</label>
-				<input id="contact-name" required placeholder="Name" />
+				<input id="contact-name" placeholder="Name" />
 
 				<label for="contact-email">Email</label>
-				<input id="contact-email" required placeholder="Email" />
+				<input id="contact-email" placeholder="Email" />
 
 				<label for="contact-subject">Subject</label>
-				<input id="contact-subject" required placeholder="Subject" />
+				<input id="contact-subject" placeholder="Subject" />
 
 				<label for="contact-description">Description</label>
 				<textarea
@@ -112,7 +113,7 @@
 					placeholder="Description (optional)"
 				></textarea>
 
-				<button class="contact-button" disabled>Submit</button>
+				<button class="contact-button">Submit</button>
 			</form>
 
 			<div class="socials">

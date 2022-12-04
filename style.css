@@ -40,3 +40,38 @@ h2 {
 section:nth-of-type(odd) {
 	/* background-color: blue; */
 }
+
+section:not([id='contact']) {
+	/* display: none; */
+}
+
+button:not(.iconbutton) {
+	padding: 0.5rem 1rem;
+	position: relative;
+	background-color: transparent;
+	border: none;
+	border-radius: 0.25rem;
+	overflow: hidden;
+}
+
+button:not(.iconbutton)::before {
+	content: ' ';
+	position: absolute;
+	top: -500%;
+	left: -50%;
+	width: 200%;
+	height: 1000%;
+	transition: rotate 0.3s ease-in-out;
+	/* rotate: 90deg; */
+	background: linear-gradient(
+		160deg,
+		var(--theme-color-1) 30%,
+		var(--theme-color-2) 70%
+	);
+	color: white;
+	z-index: -1;
+}
+
+button:not(.iconbutton):hover::before {
+	rotate: 180deg;
+}

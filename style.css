@@ -42,7 +42,21 @@ section:nth-of-type(odd) {
 }
 
 section:not([id='contact']) {
-	/* display: none; */
+	display: none;
+}
+
+.button-spinner {
+	animation: spinner 1.5s infinite ease-in-out;
+}
+
+@keyframes spinner {
+	from {
+		rotate: 0deg;
+	}
+
+	to {
+		rotate: 360deg;
+	}
 }
 
 button:not(.iconbutton) {
@@ -52,6 +66,10 @@ button:not(.iconbutton) {
 	border: none;
 	border-radius: 0.25rem;
 	overflow: hidden;
+}
+
+button > svg {
+	margin: auto;
 }
 
 button:not(.iconbutton)::before {
@@ -71,6 +89,23 @@ button:not(.iconbutton)::before {
 	color: white;
 	z-index: -1;
 }
+
+/* button:not(.iconbutton)[loading='true'] {
+	content: 'test';
+	position: absolute;
+	top: -500%;
+	left: -50%;
+	width: 200%;
+	height: 1000%;
+	transition: rotate 0.3s ease-in-out;
+	background: linear-gradient(
+		160deg,
+		var(--theme-color-1) 30%,
+		var(--theme-color-2) 70%
+	);
+	color: white;
+	z-index: -1;
+} */
 
 button:not(.iconbutton):hover::before {
 	rotate: 180deg;

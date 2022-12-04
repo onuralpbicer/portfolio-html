@@ -10,8 +10,14 @@ function parseResponse(res) {
 	else return res.text()
 }
 
+let submitting = false
 formEl.addEventListener('submit', (event) => {
 	event.preventDefault()
+	if (submitting) {
+		alert('Already submitting')
+		return
+	}
+	submitting = true
 
 	const payload = {}
 
@@ -20,6 +26,8 @@ formEl.addEventListener('submit', (event) => {
 	for (const elem of elems) {
 		payload[elem.id.replace('contact-', '')] = elem.value
 	}
+
+	const hide = showSpinner(event.submitter)
 
 	fetch('http://api.onuralpbicer.com/contact', {
 		method: 'POST',
@@ -36,5 +44,11 @@ formEl.addEventListener('submit', (event) => {
 		.catch((error) => {
 			console.error(error)
 			alert('Error. Could not send email')
+		})
+		.finally(() => {
+			hide()
+			event.target.reset()
+			submitting = false
+			alert('Success!')
 		})
 })

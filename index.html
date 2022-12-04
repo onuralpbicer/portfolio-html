@@ -22,6 +22,7 @@
 		<script defer src="./active.js"></script>
 		<script defer src="./portfolio.js"></script>
 		<script defer src="./contact.js"></script>
+		<script defer src="./button.js"></script>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
@@ -99,13 +100,13 @@
 			</h2>
 			<form id="contact-form" class="contact-form">
 				<label for="contact-name">Name</label>
-				<input id="contact-name" placeholder="Name" />
+				<input id="contact-name" required placeholder="Name" />
 
 				<label for="contact-email">Email</label>
-				<input id="contact-email" placeholder="Email" />
+				<input id="contact-email" required placeholder="Email" />
 
 				<label for="contact-subject">Subject</label>
-				<input id="contact-subject" placeholder="Subject" />
+				<input id="contact-subject" required placeholder="Subject" />
 
 				<label for="contact-description">Description</label>
 				<textarea
@@ -113,7 +114,9 @@
 					placeholder="Description (optional)"
 				></textarea>
 
-				<button class="contact-button">Submit</button>
+				<button class="contact-button">
+					Submit
+				</button>
 			</form>
 
 			<div class="socials">

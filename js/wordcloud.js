@@ -25,6 +25,8 @@ const data = [
 	{ name: 'NodeJS', weight: 5 },
 	{ name: 'Koa', weight: 5 },
 	{ name: 'Express', weight: 2 },
+	{ name: 'Git', weight: 4 },
+	{ name: 'Github', weight: 4 },
 ]
 
 const chart = Highcharts.chart('tech-skills-container', {

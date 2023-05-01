@@ -29,7 +29,7 @@ formEl.addEventListener('submit', (event) => {
 
 	const hide = showSpinner(event.submitter)
 
-	fetch('http://api.onuralpbicer.com/contact', {
+	fetch('http://api.onuralpbicer.com/api/contact', {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
